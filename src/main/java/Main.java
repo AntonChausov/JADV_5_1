@@ -23,7 +23,7 @@ public class Main {
                         flag = false;
                         break;
                     } else if (!line.matches("[-+]?\\d+")) {
-                        out.println("Give me number.");
+                        out.println(line.replace(" ", ""));
                         break;
                     }
                     int number = Integer.parseInt(line);
